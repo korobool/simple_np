@@ -1,30 +1,5 @@
 from collections import defaultdict
 
-np_rules = {
-    ('CD', 'JJ', 'NN'),
-    ('CD', 'NN'),
-    ('CD', 'RB', 'JJ', 'NN'),
-    ('DT', 'CD', 'JJ', 'NN'),
-    ('DT', 'CD', 'NN'),
-    ('DT', 'CD', 'RB', 'JJ', 'NN'),
-    ('DT', 'JJ', 'CD', 'JJ', 'NN'),
-    ('DT', 'JJ', 'CD', 'NN'),
-    ('DT', 'JJ', 'CD', 'RB', 'JJ', 'NN'),
-    ('DT', 'JJ', 'JJ', 'NN'),
-    ('DT', 'JJ', 'NN'),
-    ('DT', 'JJ', 'RB', 'JJ', 'NN'),
-    ('DT', 'NN'),
-    ('DT', 'RB', 'JJ', 'NN'),
-    ('DT', 'RB', 'VB', 'NN'),
-    ('DT', 'VB', 'NN'),
-    ('JJ', 'CD', 'JJ', 'NN'),
-    ('JJ', 'CD', 'NN'),
-    ('JJ', 'CD', 'RB', 'JJ', 'NN'),
-    ('JJ', 'JJ', 'NN'),
-    ('JJ', 'NN'),
-    ('JJ', 'RB', 'JJ', 'NN'),
-    ('NN',)}
-
 
 def check_and_apply(mask, match, identity):
     conflicts = []
@@ -263,7 +238,3 @@ def find_matches(sequence, grammar, overlaps=False):
             results['rules'].append(matches['rules'][i])
 
     return results
-
-
-if __name__ == '__main__':
-    print(find_matches(('CD', 'DT', 'CD', 'NN', 'CD', 'CD', 'CD'), grammar=np_rules))
