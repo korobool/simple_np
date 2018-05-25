@@ -11,8 +11,8 @@ def _tokenize(text):
 
 def get_nps_from_text(sentece):
     result = []
-    tokens = _tokenize(sentece)
-    matches = get_nps_from_tokens(tokens)
+    tokens_seq = _tokenize(sentece)
+    matches = get_nps_from_tokens(tokens_seq)
 
     for match in matches['matches_text']:
         result.append(' '.join(match))
