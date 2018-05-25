@@ -1,6 +1,7 @@
+## Simple guide
 * First, ipmort needed functions
 from np_extractor import get_nps_from_text, get_nps_from_tokens
-If you just want to get NP groups from a text
+* If you just want to get NP groups from a text
 Just call a ```get_nps_from_text()``` giving the text as an input.
 ```python
 text = 'What a fucking shame you do not look after the wildlife as well as a noun chunk.'
@@ -9,7 +10,7 @@ print(get_nps_from_text(text))
 ```bash
 >>> ['a fucking shame', 'the wildlife', 'a noun chunk']
 ```
-If you want get some more advanced info on rules which caused mathces and tokens indecies
+* If you want get some more advanced info on rules which caused mathces and tokens indecies
 Use NLTK to obtain tagged tokens like this
 ```python
 from nltk.tokenize import word_tokenize
