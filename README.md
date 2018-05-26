@@ -1,3 +1,6 @@
+## Motivation
+There are many modern NLP tools, like spacy that are able to find NP groups. All of them work well on a consistent text that can be parsed into a correct syntax tree. In cases when syntax is broken, POS and tree parsers become weak and things go worse. This solution has a goal to use extremely simple context free grammars on top of very simple in general less accurate POS taggerconsuming it's only strong side - robustness for noised broken text. It is expected to be much weaker on a normal text, but perform better on input like twitter and chats.
+
 ## Simple guide
 * First, ipmort required functions
 ```
