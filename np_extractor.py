@@ -33,11 +33,3 @@ def get_nps_from_tokens(tokenized_sentence):
     matches['matches_text'] = matches_texts
 
     return matches
-
-
-if __name__ == '__main__':
-    text = 'What a fucking shame you do not look after the wildlife as well as a noun chunk'
-    tokens = _tokenize(text)
-
-    print(get_nps_from_tokens(tokens))
-    print(get_nps_from_text(text))

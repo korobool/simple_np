@@ -1,6 +1,12 @@
 from collections import defaultdict
 
 
+class TooLongInputError(ValueError):
+    def __init__(self, message, errors):
+        super().__init__(message)
+        self.errors = errors
+
+
 def check_and_apply(mask, match, identity):
     conflicts = []
     start = match[0]
@@ -205,7 +211,11 @@ class RuleMatcher:
                 self._start = None
 
 
-def find_matches(sequence, grammar, overlaps=False):
+def find_matches(sequence, grammar, overlaps=False, allowed_length=120):
+    if len(sequence) > allowed_length:
+        raise TooLongInputError('Input is expected to be relatively short. For now'
+                                'its length set to be equal {}'.format(allowed_length))
+
     matches = {
         'matches': [],
         'rules': [],
