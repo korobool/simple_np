@@ -26,5 +26,6 @@ print(get_nps_from_tokens(pos_tag(word_tokenize(text))))
 ```
 
 ```bash
->>> {'matches': [(1, 3), (9, 10), (14, 16)], 'rules': [('DT', 'NN'), ('DT', 'NN'), ('DT', 'JJ', 'NN')], 'matches_text': [['a', 'fucking', 'shame'], ['the', 'wildlife'], ['a', 'noun', 'chunk']]}
+>>> {'matches': [(1, 3), (9, 10), (14, 16)], 'rules': [('DT', 'NN'), ('DT', 'NN'), ('DT', 'JJ', 'NN')], 
+'matches_text': [['a', 'fucking', 'shame'], ['the', 'wildlife'], ['a', 'noun', 'chunk']]}
 ```
