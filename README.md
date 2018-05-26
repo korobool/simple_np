@@ -1,5 +1,5 @@
 ## Simple guide
-* First, ipmort needed functions
+* First, ipmort required functions
 ```
 from np_extractor import get_nps_from_text, get_nps_from_tokens
 ```
