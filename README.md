@@ -1,6 +1,8 @@
 ## Simple guide
 * First, ipmort needed functions
+```
 from np_extractor import get_nps_from_text, get_nps_from_tokens
+```
 * If you just want to get NP groups from a text
 Just call a ```get_nps_from_text()``` giving the text as an input.
 ```python
