@@ -1,5 +1,5 @@
 ## Motivation
-There are many modern NLP tools, like spacy that are able to find NP groups. All of them work well on a consistent text that can be parsed into a correct syntax tree. In cases when syntax is broken, POS and tree parsers become weak and things go worse. This solution has a goal to use extremely simple context free grammars on top of very simple and in general less accurate POS taggerconsuming it's only strong side - robustness for noised broken text. It is expected to be much weaker on a normal text, but perform better on input like twitter and chats.
+There are many modern NLP tools, like spacy that are able to find NP groups. All of them work well on a consistent text that can be parsed into a correct syntax tree. In cases when syntax is broken, POS and tree parsers become weak and things go worse. This solution has a goal to use extremely simple context free grammars on top of very simple and in general less accurate POS tagger consuming it's only strong side - robustness for noised broken text. It is expected to be much weaker on a normal text, but perform better on input like twitter and chats.
 
 ## Simple guide
 * First, ipmort required functions
@@ -16,7 +16,7 @@ print(get_nps_from_text(text))
 >>> ['a fucking shame', 'the wildlife', 'a noun chunk']
 ```
 * If you want get some more advanced info on rules which caused mathces and tokens indecies
-Use NLTK to obtain tagged tokens like this
+Use brown-based POS tagger (for instance NLTK) to obtain tagged tokens like this
 ```python
 from nltk.tokenize import word_tokenize
 from nltk import pos_tag
