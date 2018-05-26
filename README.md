@@ -22,9 +22,6 @@ pos_tag(word_tokenize(text))
 and feed the list to ```get_nps_from_tokens()```
 
 ```python
-from nltk.tokenize import word_tokenize
-from nltk import pos_tag
-
 print(get_nps_from_tokens(pos_tag(word_tokenize(text))))
 ```
 
