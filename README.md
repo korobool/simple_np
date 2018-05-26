@@ -14,6 +14,7 @@ for noised broken text. It is expected to be much weaker on a normal text, but p
 better on input like twitter and chats.
 
 ## Simple guide
+[here](https://github.com/korobool/simple_np/blob/master/how-to-use.ipynb) you can see a jupyter notebook with examples 
 * First, ipmort required functions
 ```
 from np_extractor import get_nps_from_text, get_nps_from_tokens
