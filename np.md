@@ -1,4 +1,4 @@
-# Noun Phrase (copy-paste from [englishsentences.com/](http://englishsentences.com/noun-phrase/) )
+# Noun Phrase (copy-paste from [englishsentences.com](http://englishsentences.com/noun-phrase/) )
 ## What is a Noun Phrase?
 A noun phrase is a group of words that work together to name and describe a person, place, thing, or idea. When we look at the structure of writing, we treat a noun phrase the same way we treat a common noun.
 
