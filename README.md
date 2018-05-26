@@ -1,3 +1,8 @@
+## What is a Noun Phrase?
+A noun phrase is a group of words that work together to name and describe a person, place, thing, or idea. 
+Better to say "an entity" that behaves like a simple noun. Paraphrasing this, we can say that when 
+we look at the structure of writing, we treat a noun phrase the same way we treat a common noun.
+
 ## Motivation
 There are many modern NLP tools, like spacy that are able to find noun-phrases. 
 All of them work well on a consistent text that can be parsed into a correct syntax tree. 
