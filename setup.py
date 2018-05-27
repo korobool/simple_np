@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='simple_np',
     version='0.1',
-    packages=['simple_np'],
+    packages=[],
     install_requires=[
         'nltk',
     ],
