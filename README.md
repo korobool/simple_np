@@ -14,8 +14,8 @@ for noised broken text. It is expected to be much weaker on a normal text, but p
 better on input like twitter and chats.
 
 ## Dependencies
-Python 3.5+
-NLTK (temporary dependency)
+* Python 3.5+
+* NLTK (temporary dependency)
 
 do not forget to install NLTK models by running
 
