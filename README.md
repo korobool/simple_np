@@ -13,6 +13,22 @@ simple and in general less accurate POS tagger consuming it's only strong side -
 for noised broken text. It is expected to be much weaker on a normal text, but perform 
 better on input like twitter and chats.
 
+## Dependencies
+Python 3.5+
+NLTK (temporary dependency)
+
+do not forget to install NLTK models by running
+
+```bash
+python -m nltk.downloader all
+```
+or from the code directly
+```python
+import nltk
+nltk.download('all')
+```
+[See instructions](https://www.nltk.org/data.html)
+
 ## Simple guide
 [here](https://github.com/korobool/simple_np/blob/master/how-to-use.ipynb) you can see a jupyter notebook with examples 
 * First, ipmort required functions
