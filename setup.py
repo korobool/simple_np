@@ -4,6 +4,7 @@ setup(
     name='simple_np',
     version='0.1',
     packages=[],
+    py_modules = ['np_extractor'],
     install_requires=[
         'nltk',
     ],
