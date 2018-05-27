@@ -5,7 +5,7 @@ setup(
     version='0.1',
     packages=[],
     py_modules = ['np_extractor',
-                 'np_grammar'],
+                 'np_grammar',
                  'rules_matcher'],
     install_requires=[
         'nltk',
