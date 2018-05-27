@@ -3,7 +3,10 @@ from setuptools import setup
 setup(
     name='simple_np',
     version='0.1',
-    packages=[''],
+    packages=['simple_np'],
+    install_requires=[
+        'nltk',
+    ],
     url='https://github.com/korobool/simple_np',
     license='MIT License',
     author='Oleksandr Korobov',
