@@ -23,9 +23,10 @@ np_rules = {
 
     ('DT', 'JJ', 'CD', 'RB', 'JJ', 'NN'),   # the first five carefully constructed minutes >>> You'll think
                                             # again about the off-key interactions between Martin and Elizabeth
-    #                                       in the first five carefully constructed minutes.
+                                            # in the first five carefully constructed minutes.
 
     ('DT', 'JJ', 'NN'),                     # a nasty experience >>> You've had a nasty experience.
+
     ('DT', 'JJ', 'RB', 'JJ', 'NN'),         # the first really impressive thing >>> My mum tells me that the
                                             # first really impressive thing I made was a blue Play-Doh kangaroo.
 
