@@ -61,3 +61,6 @@ print(get_nps_from_tokens(pos_tag(word_tokenize(text))))
 >>> {'matches': [(1, 3), (9, 10), (14, 16)], 'rules': [('DT', 'NN'), ('DT', 'NN'), ('DT', 'JJ', 'NN')], 
 'matches_text': [['a', 'fucking', 'shame'], ['the', 'wildlife'], ['a', 'noun', 'chunk']]}
 ```
+## Current restrictions and needed improvements
+1. Decectcs continious np only (sequence cannot be separated by any tokens that a not a part of detecting NP)
+2. At this moment input cannot be too long. Currently it is restricted by 120 tokens. If input is longer then 120, the ```TooLongInputError``` exception rised.
